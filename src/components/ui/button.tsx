@@ -39,12 +39,13 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
-  icon?:React.ReactElement; 
-  
+  icon?:React.ReactElement;
+  left?:boolean; 
+  right?:boolean;  
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, icon, asChild = false, ...props }, ref) => {
+  ({ className, variant, left,right,size, icon, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
@@ -53,8 +54,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {/* Render the icon if it's passed */}
-        {icon && <span className="  over overflow-hidden"> {icon} </span>}
+        {icon && left && <span className="  over overflow-hidden"> {icon} </span>}
         {props.children} {/* Button text */}
+        {icon && right && <span className="  over overflow-hidden"> {icon} </span>}
       </Comp>
     );
   }
