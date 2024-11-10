@@ -61,7 +61,19 @@ export default {
         "gradient-warning":
           "linear-gradient(to right, hsl(22, 87%, 55%), hsl(91, 51%, 48%))",
       },
+      fontFamily: {
+        'open-sans': ['Open Sans', 'sans-serif'],
+      },
+      screens: {
+        'sm': {'max': '480px'},   
+        'md': {'max': '767px'},   
+        'lg': {'max': '800px'}, 
+        'xl': {'max': '1024px'},  
+        '2xl': {'max': '1280px'}, 
+        '3xl': {'max': '1366px'}, 
+      }
     },
+    
   },
   plugins: [require("tailwindcss-animate")],
 };
