@@ -7,7 +7,7 @@ const Box = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(
     return (
       <div
         className={cn(
-          "   px-[100px] md:px-[50px] sm:px-[20px]   py-[10px]  font-open-sans",
+          " max-w-[1366px]   px-[100px] md:px-[50px] sm:px-[20px]   py-[10px]  font-open-sans",
           className
         )}
         ref={ref}
