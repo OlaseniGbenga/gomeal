@@ -1,8 +1,10 @@
 import { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 // Define the types for the props (children can be any valid React node)
 interface TabsProps {
   children: ReactNode;
+  className?:string;
 }
 
 interface TabsListProps {
@@ -20,9 +22,9 @@ interface TabsContentProps {
   children: ReactNode;
 }
 
-// Tabs component
-const Tabs: React.FC<TabsProps> = ({ children }) => {
-  return <div className="bg-white rounded-md  ">{children}</div>;
+// Tabs 
+const Tabs: React.FC<TabsProps> = ({ children,className }) => {
+  return <div className={cn("bg-white rounded-md  ",className)}>{children}</div>;
 };
 
 //Tabslist

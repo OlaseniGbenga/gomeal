@@ -40,26 +40,28 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     icon?: React.ReactElement;
     left?: boolean;
     right?: boolean;
-    children: React.ReactNode; 
+    children: React.ReactNode; // Ensure `children` is compatible with both
 };
 
 // Button component with Framer Motion integration
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, left, right, size, icon, asChild = false, children, ...props }, ref) => {
-    const Comp = asChild ? Slot : motion.button; 
+    const Comp = asChild ? Slot : motion.button; // Dynamically choose between Slot or motion.button
+
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
-        {...props} 
+        {...props} // Spread remaining props, including Framer Motion props
+        // Example of animation properties from Framer Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
-      
+        {/* Render the icon if it's passed */}
         {icon && left && <span className="overflow-hidden">{icon}</span>}
-        {children} 
+        {children} {/* Button text */}
         {icon && right && <span className="overflow-hidden">{icon}</span>}
       </Comp>
     );

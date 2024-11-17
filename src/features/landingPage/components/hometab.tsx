@@ -15,7 +15,7 @@ import Bike from "@/assets/Bike.svg?react";
 //hooks
 import { useState } from "react";
 
-function HomeTab() {
+function HomeTab( {className}:{className?:string;}) {
   const [searchTerm, setSearchTerm] = useState("");
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
@@ -29,7 +29,7 @@ function HomeTab() {
   };
 
   return (
-    <Tabs>
+    <Tabs className={className}>
       <TabsList>
         <TabsTrigger
           onClick={() => {
@@ -53,15 +53,16 @@ function HomeTab() {
             className={`${active === 2 ? "fill-[#F17228]" : "fill-[#757575]"}`}
           />
           <p>Delivery</p>
+          
         </TabsTrigger>
       </TabsList>
 
       <TabsContent isActive={active === 1}>
-        <div className="p-4 flex gap-2 items-center">
+        <div className="p-4 flex gap-2 items-center sm:flex-col">
           <Search
             icon={<MapMarker className="fill-[#FF7474]" />}
             placeholder="Search Food"
-            className=" border-white fill-white  w-[700px]  bg-[#F5F5F5]"
+            className=" border-white fill-white  w-[350px] sm:w-full md:w-[200px] bg-[#F5F5F5]"
             searchTerm={searchTerm}
             handleSearchChange={handleSearchChange}
           />
@@ -88,7 +89,7 @@ function HomeTab() {
           />
 
           <Button
-            className="m-[2px] bg-gradient-primary text-red-600 "
+            className="m-[2px] bg-gradient-primary text-white "
             left={true}
             variant="secondary"
             icon={<SearchIcon className="fill-white " />}
