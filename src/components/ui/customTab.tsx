@@ -30,7 +30,7 @@ const Tabs: React.FC<TabsProps> = ({ children,className }) => {
 //Tabslist
 const TabsList: React.FC<TabsListProps> = ({ children }) => {
   return (
-    <div className="flex gap-2 border-solid border-b-[1px] p-4 ">
+    <div className="flex gap-2 border-solid border-b-[1px] p-4 sm:px-2">
       {children}
     </div>
   );

@@ -66,6 +66,7 @@ export default {
         'open-sans': ['Open Sans', 'sans-serif'],
       },
       screens: {
+        'vsm': {'max': '350px'},  
         'sm': {'max': '480px'},   
         'md': {'max': '767px'},   
         'lg': {'max': '800px'}, 

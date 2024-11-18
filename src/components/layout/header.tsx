@@ -47,7 +47,7 @@ function Header() {
   //m-auto max-w-[1366px] justify-between  px-[100px]  md:px-[50px] sm:px-[20px]  w-full
   return (
     <>
-      <Box className="w-full  z-10  top-0 bg-white left-[50%]   translate-x-[-50%]   fixed flex justify-between flex-col overflow-hidden ">
+      <Box className="w-full  z-10  top-0 bg-white left-[50%]   translate-x-[-50%]   fixed flex justify-between flex-col overflow-hidden vsm:px-[10px] ">
         <div className="justify-between w-full  overflow-hidden flex    ">
           <div className=" py-8 w-full flex justify-between  2xl:flex-col 2xl:items-start gap-y-2 items-center ">
             <div className=" h-[38px] mr-12">
