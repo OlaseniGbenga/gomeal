@@ -46,7 +46,7 @@ const TabsTrigger: React.FC<TabsTriggerProps> = ({
     <div
       onClick={onClick}
       className={`cursor-pointer inline-flex gap-2 items-center font-bold px-4 py-1 rounded ${
-        isActive ? "bg-[#ffe4d4] text-[#F17228]" : "bg-white text-[#757575]"
+        isActive ? "bg-secondary-light text-secondary" : "bg-white text-ash"
       }`}
     >
       {children}

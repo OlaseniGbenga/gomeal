@@ -41,7 +41,7 @@ const DiscountCard: React.FC<DiscountCardProps>  = ({ image, discount, productNa
       </div>
       <div className="flex flex-col gap-1">
         <p className="font-bold">{productName}</p>
-        <p className="text-[#F17228] self-start px-2 py-1 rounded-sm bg-[#ffe4d4]">
+        <p className="text-secondary self-start px-2 py-1 rounded-sm bg-secondary-light">
           {daysRemaining} Days Remaining
         </p>
       </div>

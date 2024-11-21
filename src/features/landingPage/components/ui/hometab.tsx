@@ -13,6 +13,8 @@ import MapMarker from "@/assets/map-marker-alt.svg?react";
 import SearchIcon from "@/assets/Search.svg?react";
 import Bike from "@/assets/Bike.svg?react";
 import Food from "@/assets/ImageBase.png";
+import Bag from "@/assets/bag.svg?react";
+
 //hooks
 import { useState } from "react";
 
@@ -50,7 +52,7 @@ function HomeTab({ className }: { className?: string }) {
               >
                 <Bike
                   className={`${
-                    active === 1 ? "fill-[#F17228]" : "fill-[#757575]"
+                    active === 1 ? "fill-secondary" : "fill-ash"
                   }`}
                 />
                 <p>Delivery</p>
@@ -62,21 +64,21 @@ function HomeTab({ className }: { className?: string }) {
                 }}
                 isActive={active === 2}
               >
-                <Bike
+                <Bag
                   className={`${
-                    active === 2 ? "fill-[#F17228]" : "fill-[#757575]"
+                    active === 2 ? "fill-secondary" : "fill-ash"
                   }`}
                 />
-                <p>Delivery</p>
+                <p>Pickup</p>
               </TabsTrigger>
             </TabsList>
 
             <TabsContent isActive={active === 1}>
               <div className="p-4 sm:px-2 flex gap-2 items-center sm:flex-col sm:items-stretch">
                 <Search
-                  icon={<MapMarker className="fill-[#FF7474]" />}
+                  icon={<MapMarker className="fill-secondary" />}
                   placeholder="Search Food"
-                  className=" border-white fill-white  w-[350px] sm:!w-full md:w-[200px]  bg-[#F5F5F5]"
+                  className=" border-white fill-white  w-[350px] sm:!w-full md:w-[200px]  bg-dark-white"
                   searchTerm={searchTerm}
                   handleSearchChange={handleSearchChange}
                 />
@@ -93,11 +95,11 @@ function HomeTab({ className }: { className?: string }) {
             </TabsContent>
 
             <TabsContent isActive={active === 2}>
-              <div className="p-4 flex gap-2 items-center">
+              <div className="p-4 sm:px-2 flex gap-2 items-center sm:flex-col sm:items-stretch">
                 <Search
-                  icon={<MapMarker className="fill-red-600" />}
-                  placeholder="Search Food"
-                  className=" border-white fill-white  w-[700px]  bg-[#F5F5F5]"
+                  icon={<MapMarker className="fill-secondary" />}
+                  placeholder="Search Pickup"
+                  className=" border-white fill-white  w-[350px] sm:!w-full md:w-[200px]  bg-dark-white"
                   searchTerm={searchTerm}
                   handleSearchChange={handleSearchChange}
                 />
@@ -108,7 +110,7 @@ function HomeTab({ className }: { className?: string }) {
                   variant="secondary"
                   icon={<SearchIcon className="fill-white " />}
                 >
-                  Find Food
+                  Pickup location
                 </Button>
               </div>
             </TabsContent>

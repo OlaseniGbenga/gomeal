@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,13 +6,19 @@
 @layer base {
   :root {
     --primary: 42.5 100% 52.9%;
-   /* --secondary:27, 85%, 54%; */
-    --warning:22, 87%, 55%;
-    --success:91, 51%, 48%;
-    --linear-start:0, 100%, 70%;
-    --linear-end:22, 100%, 48%;
-    --secondary:22.1, 87.6%, 55%;
-    --secondary-light:22.1, 87.6%, 55%, 0.1;
+    /* --secondary:27, 85%, 54%; */
+    --warning: 22, 87%, 55%;
+    --success: 91, 51%, 48%;
+    --linear-start: 0, 100%, 70%;
+    --linear-end: 22, 100%, 48%;
+    --secondary: 22.1, 87.6%, 55%;
+    --secondary-light: 22.1, 87.6%, 55%, 0.1;
+    --white: 0, 100%, 100%;
+    --dark-white:0, 0%, 96.1%;
+    --black: 0, 0%, 0%;
+    --ash:0, 0%, 45.9%;
+    --pink:21.43, 1.0%, 0.951%;
+  
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -38,7 +44,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 240 10% 3.9%;
@@ -64,7 +70,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
