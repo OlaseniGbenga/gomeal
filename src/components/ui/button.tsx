@@ -40,7 +40,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     icon?: React.ReactElement;
     left?: boolean;
     right?: boolean;
-    children: React.ReactNode; 
+    children?: React.ReactNode; 
 };
 
 // Button component with Framer Motion integration
