@@ -1,21 +1,46 @@
-
-      <div className="p-4 bg-blue-600">
-        <div className="w-[356.91px] flex flex-col gap-2 ">
-          <div
-            style={{ backgroundImage: `url(${Image1})` }}
-            className="w-full h-[301px]  rounded-md bg-cover flex items-end overflow-hidden "
-          >
-            <div className="bg-primary flex items-center p-2  pr-4 rounded-tr-[20px] text-white">
-              <p className="font-bold text-[45px]">15</p>
-              <div className="flex flex-col justify-around gap-0">
-                <p className=" text-[25px] font-bold leading-none">%</p>
-                <p className="leading-none"> off</p>
-              </div>
-            </div>
+<Box className=" grid grid-cols-[60%,40%] gap-20 md:flex md:flex-col bg-[#212121] text-dark-white md:py-28">
+        <div className="flex justify-between  md:flex-col gap-8">
+          <div>
+            <p className="font-bold text-white mb-4">Company</p>
+            <p>About us</p>
+            <p>Team</p>
+            <p>Careers</p>
+            <p>Blog</p>
           </div>
-          <div className="flex flex-col gap-1">
-            <p className="font-bold">Greys Vage</p>
-            <p className="text-[#F17228] self-start px-2 py-1 rounded-sm  bg-[#ffe4d4]">6 Days Remaining</p>
+          <div>
+            <p className="font-bold text-white mb-4">Contact</p>
+            <p>Help & Support</p>
+            <p>Partner with us </p>
+            <p>Ride with us</p>
+          </div>
+          <div>
+            <p className="font-bold text-white mb-4">Terms & Conditions</p>
+            <p>Refund & Cancellation</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
           </div>
         </div>
-      </div>
+        <div className=" h-8 ">
+          <p className="mb-4 font-bold">FOLLOW US</p>
+          <p>Receive exclusive offers in your mailbox</p>
+          <div className=" flex gap-2 items-center sm:flex-col sm:items-stretch ">
+            <Search
+              icon={<Envelop className="fill-secondary" />}
+              placeholder="Enter Your email"
+              className=" border-[#ADADAD] fill-white   sm:!w-full  bg-[#ADADAD]"
+              searchTerm={searchTerm}
+              handleSearchChange={handleSearchChange}
+            />
+
+            <p>hi</p>
+            <p></p>
+
+            {/* <Button
+              className="m-[2px] bg-primary text-white "
+              variant="secondary"
+            >
+              Find Food
+            </Button> */}
+          </div>
+        </div>
+      </Box>
