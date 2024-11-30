@@ -14,7 +14,7 @@ function App() {
       <HomeTab className="self-start" />
       <HomeDiscountCard />
       <HowDoesItWork />
-      {/* <LandingPageCarousel /> */}
+      <LandingPageCarousel />
       <DownloadApp />
       <Footer />
     </>
