@@ -10,50 +10,67 @@ import { Button } from "@/components/ui/button";
 function SignedIn() {
   return (
     <>
-      <div className="bg-red-600 w-[345px] flex flex-col gap-8 ">
-        <Logo />
+      <div className="bg-white w-[200px] h-screen  flex flex-col gap-8  items-center py-8">
+        <Logo className="w-[150px]" />
 
-        <Button
-          className="h"
-          variant="default"
-          left={true}
-          icon={<FoodOrder />}
-        >
-          Food order
-        </Button>
+        <div className="flex flex-col gap-4">
+          <Button
+            className="bg-primary text-white shadow-none justify-start"
+            variant="default"
+            left={true}
+            icon={<FoodOrder className="fill-white" />}
+          >
+            Food order
+          </Button>
 
-        <div className="flex gap-2">
-          {" "}
-          <Favorite />
-          <p>Favorite</p>
-        </div>
+          <Button
+            className="bg-primary text-white shadow-none justify-start"
+            variant="default"
+            left={true}
+            icon={<Favorite className="fill-white"/>}
+          >
+            <p>Favorite</p>
+          </Button>
 
-        <div className="flex gap-2">
-          {" "}
-          <Message />
-          <p>Message</p>
-        </div>
+          <Button
+            className="bg-primary text-white shadow-none justify-start"
+            variant="default"
+            left={true}
+            icon={<Message className="fill-white"/>}
+          >
+            <p>Message</p>
+          </Button>
 
-        <div className="flex gap-2">
-          {" "}
-          <History />
-          <p>Order History</p>
-        </div>
+          <Button
+            className="bg-primary text-white shadow-none justify-start"
+            variant="default"
+            left={true}
+            icon={<History className="fill-white"/>}
+          >
+            <p>Order History</p>
+          </Button>
 
-        <div className="flex gap-2">
-          {" "}
-          <Bill />
-          <p>Bill</p>
-        </div>
+          <Button
+            className="bg-primary text-white shadow-none justify-start"
+            variant="default"
+            left={true}
+            icon={<Bill className="fill-white" />}
+          >
+            <p>Bill</p>
+          </Button>
 
-        <div className="flex gap-2">
-          {" "}
-          <Setting />
-          <p>Sitting</p>
+          <Button
+            className="bg-primary text-white shadow-none justify-start"
+            variant="default"
+            left={true}
+            icon={<Setting className="fill-white"/>}
+          >
+            <p>Sitting</p>
+          </Button>
         </div>
       </div>
     </>
   );
 }
- 
+
 export default SignedIn;
