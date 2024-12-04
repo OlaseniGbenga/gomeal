@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "@/pages/home";
-import About from "@/pages/about";
-import Contact from "@/pages/contact";
+
 
 import Error from "@/pages/errorPage";
 import Protected from "@/components/layout/protected";
@@ -10,6 +9,7 @@ import Favorite from "@/pages/favorite";
 import Message from "@/pages/message";
 import Bills from "@/pages/bills";
 import Settings from "@/pages/setting";
+import OrderHistory from "@/pages/orderHistory";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +17,6 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
-    
     element: <Protected />,
 
     children: [
@@ -34,17 +33,19 @@ const router = createBrowserRouter([
         element: <Message />,
       },
       {
-        path: "Bills",
+        path: "bills",
         element: <Bills />,
       },
       {
         path: "setting",
         element: <Settings />,
       },
+      {
+        path: "order-history",
+        element: <OrderHistory />,
+      },
     ],
   },
-
-  
 ]);
 
 export default router;
