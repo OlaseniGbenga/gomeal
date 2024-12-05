@@ -6,9 +6,9 @@ function Protected() {
 
   return (
     <>
-      <div className="flex max-w-[1366px] m-auto">
+      <div className="flex max-w-[1366px] m-auto bg-yellow-600  bg-white">
         <LeftAside />
-        <Outlet />
+        <Outlet  />
         <RightAside />
 
        

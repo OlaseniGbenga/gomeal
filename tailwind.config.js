@@ -14,12 +14,12 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        pink:"hsl(var(--pink))",
-        ash:"hsl(var(--ash))",
-        black:"hsl(var(--black))",
-        white:"hsl(var(--white))",
-        dark:{
-          white:"hsl(var(--dark-white))",
+        pink: "hsl(var(--pink))",
+        ash: "hsl(var(--ash))",
+        black: "hsl(var(--black))",
+        white: "hsl(var(--white))",
+        dark: {
+          white: "hsl(var(--dark-white))",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -38,7 +38,7 @@ export default {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-          light:"hsl(var(--secondary-light))"
+          light: "hsl(var(--secondary-light))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -70,19 +70,19 @@ export default {
           "linear-gradient(to right, hsl(22, 87%, 55%), hsl(91, 51%, 48%))",
       },
       fontFamily: {
-        'open-sans': ['Open Sans', 'sans-serif'],
+        "open-sans": ["Open Sans", "sans-serif"],
       },
       screens: {
-        'vsm': {'max': '350px'},  
-        'sm': {'max': '480px'},   
-        'md': {'max': '767px'},   
-        'lg': {'max': '800px'}, 
-        'xl': {'max': '1024px'},  
-        '2xl': {'max': '1280px'}, 
-        '3xl': {'max': '1366px'}, 
-      }
+        vsm: { max: "350px" },
+        sm: { max: "480px" },
+        md: { max: "767px" },
+        lg: { max: "800px" },
+        xl: { max: "1024px" },
+        "1xl": { max: "1120px" },
+        "2xl": { max: "1280px" },
+        "3xl": { max: "1366px" },
+      },
     },
-    
   },
   plugins: [require("tailwindcss-animate")],
 };
