@@ -60,7 +60,7 @@ function LeftAside() {
                     />
                   }
                 >
-                  Favorite
+                  Menu
                 </Button>
               );
             }}
@@ -83,7 +83,7 @@ function LeftAside() {
                     <Message className={isActive ? "fill-white" : "fill-ash"} />
                   }
                 >
-                  Message
+                 Offers
                 </Button>
               );
             }}
@@ -106,7 +106,7 @@ function LeftAside() {
                     <History className={isActive ? "fill-white" : "fill-ash"} />
                   }
                 >
-                  Order History
+                  Restaurants
                 </Button>
               );
             }}
@@ -126,10 +126,10 @@ function LeftAside() {
                   variant="default"
                   left={true}
                   icon={
-                    <Bill className={isActive ? "fill-white" : "fill-ash"} />
+                    <Setting className={isActive ? "fill-white" : "fill-ash"} />
                   }
                 >
-                  Bill
+                 Career
                 </Button>
               );
             }}
@@ -149,10 +149,10 @@ function LeftAside() {
                   variant="default"
                   left={true}
                   icon={
-                    <Setting className={isActive ? "fill-white" : "fill-ash"} />
+                    <Bill className={isActive ? "fill-white" : "fill-ash"} />
                   }
                 >
-                  Setting
+                 News
                 </Button>
               );
             }}
