@@ -5,8 +5,8 @@ import RightAside from "@/components/custom-ui/RightAside";
 function Protected() {
   return (
     <>
-      <div className="hidden md:flex flex-col max-w-[1366px] m-auto bg-yellow-600  bg-white">
-        <div className="flex justify-between">
+      <div className="h-0 overflow-hidden md:h-auto md:flex flex-col max-w-[1366px] m-auto bg-yellow-600  bg-white">
+        <div className="md:flex justify-between">
           <LeftAside />
           <RightAside />
         </div>
