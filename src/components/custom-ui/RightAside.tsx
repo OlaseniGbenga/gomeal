@@ -22,7 +22,8 @@ import PageMenu from "./pageMenu";
 function RightAside() {
   return (
     <>
-      <div className="px-2 pt-8">
+    
+      <div className="1xl:px-2 pt-8">
         <Menubar className="hidden 1xl:flex ">
           <MenubarMenu>
             <MenubarTrigger className=" p-0">
