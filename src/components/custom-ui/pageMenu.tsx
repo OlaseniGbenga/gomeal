@@ -14,7 +14,7 @@ function PageMenu({className}:{className?:string;}) {
     <>
       <div className={clsx("flex flex-col gap-4 1xl:gap-[0px]",className)}>
         <NavLink to="food-order">
-          {({ isActive }) => {
+          {({ isActive }:{isActive:Boolean}) => {
             return (
               <Button
                 className={clsx(
@@ -36,7 +36,7 @@ function PageMenu({className}:{className?:string;}) {
         </NavLink>
 
         <NavLink to="favorite">
-          {({ isActive }) => {
+          {({ isActive }:{isActive:Boolean}) => {
             return (
               <Button
                 className={clsx(
@@ -58,7 +58,7 @@ function PageMenu({className}:{className?:string;}) {
         </NavLink>
 
         <NavLink to="message">
-          {({ isActive }) => {
+          {({ isActive }:{isActive:Boolean}) => {
             return (
               <Button
                 className={clsx(
@@ -80,7 +80,7 @@ function PageMenu({className}:{className?:string;}) {
         </NavLink>
 
         <NavLink to="order-history">
-          {({ isActive }) => {
+          {({ isActive }:{isActive:Boolean}) => {
             return (
               <Button
                 className={clsx(
@@ -102,7 +102,7 @@ function PageMenu({className}:{className?:string;}) {
         </NavLink>
 
         <NavLink to="bills">
-          {({ isActive }) => {
+          {({ isActive }:{isActive:Boolean}) => {
             return (
               <Button
                 className={clsx(
@@ -124,7 +124,7 @@ function PageMenu({className}:{className?:string;}) {
         </NavLink>
 
         <NavLink to="setting">
-          {({ isActive }) => {
+          {({ isActive }:{isActive:Boolean}) => {
             return (
               <Button
                 className={clsx(
