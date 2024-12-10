@@ -1,6 +1,8 @@
 //assets
 import Image1 from "@/assets/Image2.jpg";
 import Marker from "@/assets/Group.svg?react";
+import Image2 from "@/assets/Image02.jpg";
+import Image3 from "@/assets/Image03.jpg";
 
 export const cardData = [
   {
@@ -10,13 +12,13 @@ export const cardData = [
     daysRemaining: 7,
   },
   {
-    image: Image1,
+    image: Image2,
     discount: 20,
     productName: "Luxe Collection",
     daysRemaining: 5,
   },
   {
-    image: Image1,
+    image: Image3,
     discount: 30,
     productName: "Summer Sale",
     daysRemaining: 3,
