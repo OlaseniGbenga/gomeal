@@ -1,14 +1,5 @@
 import Logo from "@/assets/Logo.svg?react";
-import FoodOrder from "@/assets/foodOrder.svg?react";
-import Message from "@/assets/message.svg?react";
-import Favorite from "@/assets/favorite.svg?react";
-import History from "@/assets/history.svg?react";
-import Bill from "@/assets/Bill.svg?react";
-import Setting from "@/assets/setting.svg?react";
-import { Button } from "@/components/ui/button";
 
-import { NavLink } from "react-router-dom";
-import clsx from "clsx";
 import PageMenu from "./pageMenu";
 function LeftAside() {
   return (

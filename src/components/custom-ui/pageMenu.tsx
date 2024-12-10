@@ -95,7 +95,7 @@ function PageMenu({className}:{className?:string;}) {
                   <History className={isActive ? "fill-white" : "fill-ash"} />
                 }
               >
-                Restaurants
+              OrderHistory
               </Button>
             );
           }}
