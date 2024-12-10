@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
+
+
+
+
 //path shadcn
 import path from 'path'
 
