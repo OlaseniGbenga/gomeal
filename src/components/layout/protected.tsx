@@ -14,7 +14,7 @@ function Protected() {
         <Outlet />
       </div>
 
-      <div className=" md:hidden flex  max-w-[1366px] m-auto bg-yellow-600  bg-white">
+      <div className=" md:hidden flex  max-w-[1366px] m-auto  bg-white">
         <LeftAside />
         <Outlet />
         <RightAside />
